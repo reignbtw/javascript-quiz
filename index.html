@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".assets/stylesheet.css">
+    <link rel="stylesheet" href=".assets/stylesheet2.css">
+    <title>Quiz</title>
+</head>
+    <body>
+        <div class="abs-max-height">
+            <div class="top-bar">
+                <div id="top-bar-info">
+                    <button class="red-nav-button">View Highscores</button>
+                    <p>Timer: 00:00</p>
+                </div>
+            </div>
+            <div class="horizontal-center vertical-center rel-max-height">
+                <header id="intro-screen" class="large-padding">
+                    <h1>JavaScript Quiz</h1>
+                    <div>
+                        <p>Welcome to a JavaScript quiz. Here you will be given several questions related to JavaScript. To get started, please click "Start Quiz".</p>
+                        <button class="start-quiz-button red-nav-button" id="start-quiz-button">Start Quiz</button>
+                    </div>
+                </header>
+        
+                <main>
+                    <section aria-labelledby="question-title" id="question-screen" class="question-screen-medium-padding">
+                        <h2 id="question-title" class="question-title"></h2>
+                        <ul>
+                            <!-- !! generate answer buttons !!-->
+                        </ul>
+                        <footer id="question-feedback" class="question-feedback">
+                            <p>you got the answer wrong</p>
+                        </footer>
+                    </section>
+                    <section aria-labelledby="quiz-complete-title" id="finish-screen" class="finish-screen">
+                        <h2 id="quiz-complete-title">Quiz Complete!</h2>
+                        <p>Final Score: 0</p>
+                        <div id="score-entry" class="score-entry">
+                            <label for="">Enter initials:</label>
+                            <input type="text" placeholder="Initials Here">
+                            <button class="red-nav-button">submit</button>
+                        </div>
+                    </section>
+                    <section aria-multiselectable="highscores-title" id="highscores-screen" class="highscores-screen">
+                        <h2 id="highscores-title">Highscores:</h2>
+                        <ol>
+                            <!-- !! generate highscore labels !! -->
+                        </ol>
+                        <button id="go-back-button">Go back</button>
+                        <button id="clear-scores-button" class="red-nav-button">Clear scores</button>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <script type="module" src=".assets/script"></script>
+        
+    </body>
+</html>

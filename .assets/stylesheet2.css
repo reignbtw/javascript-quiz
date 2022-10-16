@@ -1,0 +1,286 @@
+:root {
+    --theme-body-background-color:  #6b2569;
+}
+
+body {
+    background-color: var(--theme-body-background-color);
+    height: 100vh;
+    overflow: hidden;
+}
+
+button {
+    font-weight: 900;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto calc(15vc + 50px) auto;
+    background-color: #59084a;
+    border-radius: 12px;
+    box-shadow: 0 0 40px black;
+    padding: 22px;
+}
+
+.red-nav-button {
+    background-color: #59084a;
+    box-shadow: 0 0 5px black;
+    transition: background-color 0.25s;
+}
+
+.red-nav-button:hover {
+    background-color: #a20101;
+}
+
+.horizontal-center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.abs-max-height {
+    height: 100%;
+}
+
+.rel-max-height {
+    height: 100%;
+}
+
+.half-height {
+    height: 50%;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-padding {
+    padding: 7px;
+}
+
+.medium-padding {
+    padding: 17px;
+}
+
+.large-padding {
+    padding: 27px;
+}
+
+.top-bar {
+    width: 100%;
+    padding: 15px 15px 10px 15px;
+}
+
+.top-bar div {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top-bar button {
+    height: 100%;
+    margin: 0;
+    font-size: 11px;
+    border-radius: 15px;
+    background-color: #59084a;
+}
+
+.top-bar p {
+    letter-spacing: 3px;
+    font-weight: 650;
+    height: 100%;
+    background-color: #59084a;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 0 9px white;
+}
+
+header {
+    display: block;
+    background-color: #59084a;
+    border-radius: 15px;
+    box-shadow: 0 0 40px black;
+}
+
+header div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    color: #72e6f1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.start-quiz-button {
+    margin: 10px; auto 0 auto;
+    font-weight: 900;
+    padding: 10px 15px;
+}
+
+.question-screen {
+    display: none;
+}
+
+.question-title, .question-title span {
+    color: #92c4cf;
+    font-family: monospace;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.question-title span:first-child {
+    color: #9c9c9c;
+}
+
+.question-title::after {
+    content:"";
+    width: 80%;
+    margin: auto;
+    background-color: #313131;
+    position: absolute;
+    left: 10%;
+    bottom: -10px;
+    height: 4px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px #545454;
+}
+
+.question-screen li {
+    padding: 5px;
+    width: 50%;
+    min-height: 3px;
+    transition: width 0.5s;
+    word-break: break-all;
+}
+
+.question-screen li:hover {
+    width: 60%;
+}
+
+.question-screen ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-screen button {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    color: #cbcaca;
+    transition: background-color 0.25s;
+}
+
+.question-screen button:hover {
+    background-color: #373636;
+}
+
+.question-feedback {
+    margin-top: 25px;
+}
+
+.question-feedback p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: #818080;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.finish-screen {
+    display: none;
+}
+
+.finish-screen h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fba6ff;
+    margin-bottom: 6px;
+}
+
+.finish-screen p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+.score-entry label {
+    height: 50%;
+    flex: 1;
+    margin-bottom: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.score-entry button {
+    flex: 1;
+    font-size: 11px;
+    padding: 6px;
+}
+
+.score-entry input {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex: 1;
+    min-width: 50px;
+}
+
+.score-entry {
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 11px;
+    margin-right: 11px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.highscores-screen h2 {
+    font-family: system-ui;
+    color: #dea6ff;
+    margin-bottom: 15px;
+}
+
+.highscores-screen ol {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;   
+    padding: 5px;
+    font-weight: 900;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+    background-color: #1c1c1c27;
+    box-shadow: 0 0 10px black;
+    max-height: 60px;
+    min-height: 20px;
+}
+
+.highscores-screen button {
+    display: inline;
+    margin-right: 12px;
+    box-shadow: 0  0 10px black;
+}
+
+.highscores-screen ol li {
+    padding: 5px;
+    background-color: #434343;
+}
+
+.highscores-screen ol li:nth-child(2n) {
+    background-color: #3a3a3a;
+}
+
+@media screen and (max-width: 813px)  {
+    .horizontal-center {
+        width: 80%;
+    }
+}
