@@ -123,7 +123,7 @@ h1 {
 }
 
 .start-quiz-button {
-    margin: 10px; auto 0 auto;
+    margin: 10px;
     font-weight: 900;
     padding: 10px 15px;
 }
@@ -242,6 +242,10 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.highscores-screen {
+    display: none;
 }
 
 .highscores-screen h2 {
